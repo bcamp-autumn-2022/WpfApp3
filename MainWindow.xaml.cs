@@ -20,9 +20,38 @@ namespace WpfApp3
     /// </summary>
     public partial class MainWindow : Window
     {
+        Person objectPerson;
         public MainWindow()
         {
             InitializeComponent();
+            textFname.Focus();
+            
+        }
+
+        private void btnSet_Click(object sender, RoutedEventArgs e)
+        {
+            //Person objectPerson=new Person();
+            objectPerson = new Person();
+            objectPerson.Fname=textFname.Text;
+            objectPerson.Lname=textLname.Text;
+            
+        }
+
+        private void btnGet_Click(object sender, RoutedEventArgs e)
+        {
+            if(objectPerson == null)
+            {
+                MessageBox.Show("You have to click Set-button first");
+            }
+            else
+            {
+                MessageBox.Show("Hello " + objectPerson.Fname + " " + objectPerson.Lname);
+                //textFname.Text = "";
+                //textLname.Text = "";
+                textFname.Clear();
+                textLname.Clear();
+            }
+            
         }
     }
 }

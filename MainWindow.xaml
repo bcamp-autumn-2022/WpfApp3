@@ -25,9 +25,9 @@
         </Grid.RowDefinitions>
         <TextBlock x:Name="tbFna" Grid.Column="1" Grid.Row="1"  Text="Firstname" FontSize="24"/>
         <TextBlock x:Name="tbLna" Grid.Column="3" Grid.Row="1"  Text="Lastname" FontSize="24"/>
-        <TextBox x:Name="textFname" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Text="TextBox" VerticalAlignment="Center" Width="160" FontSize="24"/>
-        <TextBox x:Name="textLname" Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Text="TextBox" VerticalAlignment="Center" Width="160" FontSize="24"/>
-        <Button x:Name="btnSet" Grid.Column="5" Content="Set" HorizontalAlignment="Center" Width="160" Grid.Row="2" VerticalAlignment="Center"/>
-        <Button x:Name="btnGet" Grid.Column="5" Content="Get" HorizontalAlignment="Center" Width="160" Grid.Row="3" VerticalAlignment="Center"/>
+        <TextBox x:Name="textFname" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Text="" VerticalAlignment="Center" Width="160" FontSize="24"/>
+        <TextBox x:Name="textLname" Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Text="" VerticalAlignment="Center" Width="160" FontSize="24"/>
+        <Button x:Name="btnSet" Grid.Column="5" Content="Set" HorizontalAlignment="Center" Width="160" Grid.Row="2" VerticalAlignment="Center" Click="btnSet_Click"/>
+        <Button x:Name="btnGet" Grid.Column="5" Content="Get" HorizontalAlignment="Center" Width="160" Grid.Row="3" VerticalAlignment="Center" Click="btnGet_Click"/>
     </Grid>
 </Window>
