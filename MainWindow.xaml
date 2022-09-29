@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="190*"/>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="183*"/>
+            <ColumnDefinition Width="28*"/>
+            <ColumnDefinition Width="219*"/>
+            <ColumnDefinition Width="77*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="56*"/>
+            <RowDefinition Height="55*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="219*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="tbFna" Grid.Column="1" Grid.Row="1"  Text="Firstname" FontSize="24"/>
+        <TextBlock x:Name="tbLna" Grid.Column="3" Grid.Row="1"  Text="Lastname" FontSize="24"/>
+        <TextBox x:Name="textFname" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" Text="TextBox" VerticalAlignment="Center" Width="160" FontSize="24"/>
+        <TextBox x:Name="textLname" Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" Text="TextBox" VerticalAlignment="Center" Width="160" FontSize="24"/>
+        <Button x:Name="btnSet" Grid.Column="5" Content="Set" HorizontalAlignment="Center" Width="160" Grid.Row="2" VerticalAlignment="Center"/>
     </Grid>
 </Window>
